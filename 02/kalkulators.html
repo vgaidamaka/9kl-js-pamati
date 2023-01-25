@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Kalkulators v 1.0</title>
+<script>
+function skSum(){
+let a,b,c;
+a=document.getElementById("pirmaisMainigais").value;
+b=document.getElementById("otraisMainigais").value;
+alert(1*a+1*b);
+//var
+}
+function skStarp(){
+let a,b,c;
+a=document.getElementById("pirmaisMainigais").value;
+b=document.getElementById("otraisMainigais").value;
+alert(a-b);
+//var
+}
+function skReiz(){
+let a,b,c;
+a=document.getElementById("pirmaisMainigais").value;
+b=document.getElementById("otraisMainigais").value;
+alert(a*b);
+//var
+}
+function skDal(){
+let a,b,c;
+a=document.getElementById("pirmaisMainigais").value;
+b=document.getElementById("otraisMainigais").value;
+alert(a/b);
+//var
+}
+function skPak(){
+let a,b,c;
+a=Number(document.getElementById("pirmaisMainigais").value);
+b=Number(document.getElementById("otraisMainigais").value);
+alert(Math.pow(a,b));
+//var
+}
+function skRand(){
+let a,b,c;
+a=Number(document.getElementById("pirmaisMainigais").value);
+b=Number(document.getElementById("otraisMainigais").value);
+//alert(Math.random());
+alert(Math.round(Math.random()*9)+1);
+//var
+}
+</script>
+</head>
+<body>
+<h1>Kalkulators</h1>
+<p>Izveidot kalkulatoru, kas veic šādas darbības: +, -, *, /, ģenerē nejaušus skaitļus, aprēķina x^n pakāpē</p>
+<center>
+<input type="text" id="pirmaisMainigais"><input type="text" id="otraisMainigais">
+<br>
+<input type="button" value="+" onclick="skSum()"><input type="button" value="-" onclick="skStarp()"><input type="button" value="*" onclick="skReiz()"><input type="button" value="/" onclick="skDal()"><input type="button" value="a^x" onclick="skPak()"><input type="button" value="random" onclick="skRand()">
+</center>
+</body>
+</html>
