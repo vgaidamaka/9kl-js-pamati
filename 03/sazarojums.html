@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Sazarojuma piemērs</title>
+<script>
+function kadsIrSkaitlis(){
+    let a;
+	
+    a = Number(document.getElementById("skaitlis").value);
+    if (a > 0)
+	{
+		window.alert("pozitīvs");
+    }
+	else if (a == 0)
+	{
+		window.alert("a ir nulle");
+    } else
+	{
+		window.alert("a ir negatīvs skaitlis");
+        }
+    }
+</script>
+</head>
+<body>
+<h1>Noskaidro vai skaitlis ir pozitīvs/negatīvas vai nulle</h1>
+<p>Noskaidro vai skaitlis ir pozitīvs/negatīvas vai nulle</p>
+<input type="text" value="0" id="skaitlis">
+<input type="button" value="atrast!" onclick="kadsIrSkaitlis()">
+</body>
+</html>
