@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>3 skaitļu kārtošana</title>
+
+<script>
+
+function yesnoCheck() {
+    if (document.getElementById("vis").style.visibility == "visible") {
+        document.getElementById("vis").style.visibility = "hidden";
+    } else {
+        document.getElementById("vis").style.visibility = "visible";
+    }
+}
+/* cits veids, kā to var izdarīt
+function yesnoCheck() {
+  var x = document.getElementById("vis");
+  if (x.style.display == "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+}*/
+</script>
+
+</head>
+<body>
+<h1>Sakārto trīs skaitļus</h1>
+<p>Ar <i>prompt</i> lietotājs ievada trīs sakaitļus, poga <i>Sākt ievadi</i>. Skaitļus izvada rindkopā. Poga <i>Kārtot!</i> kārto skaitļus augošā vai dilstošā secībā</i></p>
+<!-- kāda ir atšķirība?
+<div id="vis"><button >Click!</button></div>
+-->
+<button id="vis">Click!</button>
+<button onclick="yesnoCheck()">Test!</button>
+</body>
+</html>
