@@ -6,27 +6,10 @@
 
 <script>
 
-function yesnoCheck() {
-    if (document.getElementById("vis").style.visibility == "visible") {
-        document.getElementById("vis").style.visibility = "hidden";
-    } else {
-        document.getElementById("vis").style.visibility = "visible";
-    }
-}
-/* cits veids, kā to var izdarīt
-function yesnoCheck() {
-  var x = document.getElementById("vis");
-  if (x.style.display == "none") {
-    x.style.display = "block";
-  } else {
-    x.style.display = "none";
-  }
-}*/
 function izvadiTekstu(){
 let teksts;
 teksts=prompt("Ievadiet tekstu", "noname");
 document.getElementById("tekstaIzvade").innerHTML=teksts+"<br>"+"nākama rindkopa";
-
 
 }
 
@@ -39,8 +22,6 @@ document.getElementById("tekstaIzvade").innerHTML=teksts+"<br>"+"nākama rindkop
 <!-- kāda ir atšķirība?
 <div id="vis"><button >Click!</button></div>
 -->
-<button id="vis">Click!</button>
-<button onclick="yesnoCheck()">Test!</button>
 <button onclick="izvadiTekstu()">Dati rindkopā</button>
 <p id="tekstaIzvade">...</p>
 </body>
