@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Ideja kalkulatoram v 2.0</title>
+<script>
+let a,b,c,gebi;
+function skSum(){
+gebi=document.getElementById("Mainigais");
+a=gebi.value;
+document.getElementById("Matematika").innerHTML=a+"+";
+gebi.value=0;
+a=Number(a);
+}
+
+function atbilde(){
+b=document.getElementById("Mainigais").value;
+b=Number(b);
+c=a+b;
+document.getElementById("Matematika").innerHTML=a+"+"+b+"="+c;
+gebi.value=c;
+}
+function izvele(){
+let day;
+switch (new Date().getDay()) {
+  case 0:
+    day = "Sunday";
+    break;
+  case 1:
+    day = "Monday";
+    break;
+  case 2:
+    day = "Tuesday";
+    break;
+  case 3:
+    day = "Wednesday";
+    break;
+  case 4:
+    day = "Thursday";
+    break;
+  case 5:
+    day = "Friday";
+    break;
+  case  6:
+    day = "Saturday";
+}
+document.getElementById("Matematika").innerHTML = "Today is " + day;
+}
+let operNr;
+function oper(a){
+alert("ready"+a);
+}
+function oper4(){
+alert("ready"+4);
+}
+
+</script>
+</head>
+<body>
+<h1>Kalkulators</h1>
+<p>Kalkulatora ar vienu ievades logu paraugs</p>
+<center>
+<input type="text" id="Mainigais">
+<p id="Matematika"></p>
+<br>
+<input type="button" value="+" onclick="oper(1)">
+<input type="button" value="-" onclick="oper(2)">
+<input type="button" value="x" onclick="oper(3)">
+<input type="button" value="/" onclick="oper4()">
+<input type="button" value="=" onclick="atbilde()">
+<input type="button" value="izvēle" onclick="izvele()">
+</center>
+</body>
+</html>
