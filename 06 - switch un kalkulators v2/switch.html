@@ -9,7 +9,6 @@ function skSum(){
 gebi=document.getElementById("Mainigais");
 a=gebi.value;
 document.getElementById("Matematika").innerHTML=a+"+";
-gebi.value=0;
 a=Number(a);
 }
 
@@ -47,12 +46,10 @@ switch (new Date().getDay()) {
 document.getElementById("Matematika").innerHTML = "Today is " + day;
 }
 let operNr;
-function oper(a){
-alert("ready"+a);
+function oper(abra){
+alert("Nospiesta poga "+abra);
 }
-function oper4(){
-alert("ready"+4);
-}
+
 
 </script>
 </head>
@@ -65,9 +62,7 @@ alert("ready"+4);
 <br>
 <input type="button" value="+" onclick="oper(1)">
 <input type="button" value="-" onclick="oper(2)">
-<input type="button" value="x" onclick="oper(3)">
-<input type="button" value="/" onclick="oper4()">
-<input type="button" value="=" onclick="atbilde()">
+<input type="button" value="=" onclick="atr()">
 <input type="button" value="izvēle" onclick="izvele()">
 </center>
 </body>

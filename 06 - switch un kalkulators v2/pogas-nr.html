@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Ideja kalkulatoram v 2.0</title>
+<script>
+let operNr,a,gebi;
+function oper(y){
+gebi=document.getElementById("Mainigais");
+a=Number(gebi.value);
+alert(a);
+operNr=y;
+}
+function pogasNr(){
+switch (operNr){
+case 1:
+alert("nospiests 1");
+break;
+case 2:
+alert("nospiests 2");
+break;
+}
+}
+</script>
+</head>
+<body>
+<h1>Kalkulators</h1>
+<p>Kalkulatora ar vienu ievades logu paraugs</p>
+<center>
+<input type="text" id="Mainigais">
+
+<input type="button" value="+" onclick="oper(1)">
+<input type="button" value="-" onclick="oper(2)">
+<input type="button" value="*" onclick="oper(3)">
+<input type="button" value="/" onclick="oper(4)">
+<input type="button" value="=" onclick="pogasNr()">
+
+</center>
+</body>
+</html>
