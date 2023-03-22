@@ -5,8 +5,24 @@
 <title>Mans pirmais zīmējums</title>
 </head>
 <body>
-<canvas id="vma" width="1000px" height="560px" style="border:1px solid #ffcc33;"></canvas>
+<canvas id="vma" width="990px" height="530px" style="border:10px solid #ff0066;"></canvas>
+<script>
+var a = document.getElementById("vma");
+var ctx = a.getContext("2d");
+//var a = document.getElementById("vma").getContext("2d");
 
-<!--1920x1080-->
+ctx.moveTo(10, 10);
+ctx.lineTo(210, 10);
+ctx.lineTo(210, 210);
+ctx.lineTo(10, 210);
+ctx.lineTo(10, 10);
+ctx.stroke();
+
+//ctx.beginPath();
+//ctx.rect(10, 10, 210, 200);
+ctx.fillStyle = "blue";
+ctx.fill();
+
+</script>
 </body>
 </html>
