@@ -5,23 +5,34 @@
 <title></title>
 <script>
 let dati;
+let gatavaRindkopa="0";
+
 function printNumbers(){
 dati=Number(document.getElementById("datuIevade").value);
-}
-
-/*ideja:
-let b = 'hello';
-// Expected output: 5
-for (i=0; i<51; i++){
-console.log(b += ' world'); // Concatenation
-//
+/* 1. variants
+for (i=1; i<=dati; i++)
+	{
+	gatavaRindkopa=gatavaRindkopa+" "+i;
+	}
+document.getElementById("ciparuIzvade").innerHTML=gatavaRindkopa;
 }
 */
+
+/* 2. variants */
+
+for (i=1; i<=dati; i++)
+	{
+	document.getElementById("ciparuIzvade").innerHTML+=" "+i;
+	}
+}
+/* */
 </script>
 </head>
 <body>
-<h1>Uzdevuma nosaukums</h1>
+<h1>Cikls <i>FOR</i></h1>
 <p>Nosacījuma apraksts</p>
-<input id="datuIevade" type="text" value="0"><input type="button" value="Go!" onclick="printNumbers()">
+<input id="datuIevade" type="text" value="0">
+<input type="button" value="Go!" onclick="printNumbers()">
+<p id="ciparuIzvade"> </p>
 </body>
 </html>
