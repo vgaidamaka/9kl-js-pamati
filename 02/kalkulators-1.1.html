@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Kalkulators v1.0</title>
+<style>
+.center{
+text-align: center;
+}
+</style>
+<script>
+let a,b,c;
+
+function sask(){
+a=Number(document.getElementById("in1").value);
+b=Number(document.getElementById("in2").value);
+c=a+b;
+document.getElementById("out1").innerHTML=c;
+}
+
+function atn(){
+a=Number(document.getElementById("in1").value);
+b=Number(document.getElementById("in2").value);
+c=a-b;
+document.getElementById("out1").innerHTML=c;
+}
+
+function reiz(){
+a=Number(document.getElementById("in1").value);
+b=Number(document.getElementById("in2").value);
+c=a*b;
+document.getElementById("out1").innerHTML=c;
+}
+
+function dal(){
+a=Number(document.getElementById("in1").value);
+b=Number(document.getElementById("in2").value);
+
+c=a/b;
+document.getElementById("out1").innerHTML=c;
+}
+
+
+function pak(){
+a=Number(document.getElementById("in1").value);
+b=Number(document.getElementById("in2").value);
+c=a**b;
+document.getElementById("out1").innerHTML=c;
+}
+
+function ran(){
+a=Number(document.getElementById("in1").value);
+b=Number(document.getElementById("in2").value);
+c=Math.floor(Math.random() * (b - a + 1) + a);
+document.getElementById("out1").innerHTML=c;
+}
+
+</script>
+</head>
+<body>
+<div class="center">
+<input type="number" value="0" id="in1">
+<input type="number" value="0" id="in2">
+</div>
+<div div class="center">
+
+<input type="button" value="+" onclick="sask()">
+<input type="button" value="-" onclick="atn()">
+<input type="button" value="*" onclick="reiz()">
+<input type="button" value="/" onclick="dal()">
+</div>
+
+<div class="center">
+<input type="button" value="x^y" onclick="pak()">
+<input type="button" value="ran" onclick="ran()">
+</div>
+
+<div div class="center">
+<input type="button" value="=">
+</div>
+
+<p class="center" id="out1">atbilde</p>
+</body>
+</html>
